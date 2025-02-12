@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Lexend";
+    src: url("../fonts/Lexend-VariableFont_wght.ttf");
+}
+
 @theme {
     --color-lime-primary: #CAFF33;
     --color-lime-text: #D1FF4D;
@@ -7,4 +12,9 @@
     --color-olive-secondary: #22251B;
     --color-dark-card-bg: #262626;
     --color-dark-container-bg: #1C1C1C;
+    --color-dark-bg: #1A1A1A;
+
+    /* config font */
+    --font-lexend: "Lexend";
+
 }

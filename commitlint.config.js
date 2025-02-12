@@ -4,7 +4,7 @@ module.exports = {
         'type-enum': [
             2, // Error level
             'always', // Always apply this rule
-            ['feat', 'init', 'fix', 'docs', 'style', 'refactor', 'chore', "config"], // Only allow these types
+            ['add', 'feat', 'init', 'fix', 'docs', 'style', 'refactor', 'chore', "config"], // Only allow these types
         ],
         'subject-case': [2, 'never', ['sentence-case']], // Prevent the subject from being sentence case
     },
