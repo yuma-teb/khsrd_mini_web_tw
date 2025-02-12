@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-lime-primary: #CAFF33;
+    --color-lime-text: #D1FF4D;
+    --color-gray-text: #4C4C4D;
+    --color-olive-secondary: #22251B;
+    --color-dark-card-bg: #262626;
+    --color-dark-container-bg: #1C1C1C;
+}
