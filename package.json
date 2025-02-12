@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+        "@tailwindcss/cli": "^4.0.6",
+        "tailwindcss": "^4.0.6"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.7.1",
+        "@commitlint/config-conventional": "^19.7.1",
+        "husky": "^9.1.7"
+    },
+    "scripts": {
+        "prepare": "husky",
+        "commitlint": "commitlint --edit",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
