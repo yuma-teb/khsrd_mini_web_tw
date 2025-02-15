@@ -116,15 +116,15 @@
             </div>
             <div class="flex gap-6 hidden lg:flex">
                 <button class="text-xl text-white">Sign Up</button>
-                <button class="bg-lime-primary py-3.5 px-8 text-xl rounded-4xl">Login</button>
+                <button class="bg-lime-primary py-3.5 px-8 text-xl rounded-4xl text-dark-bg">Login</button>
             </div>
 
         </div>
     </nav>
 
     <!-- hero section -->
-    <section class="border border-amber-50 mt-40 py-4 px-3 md:mt-44 md:py-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl mx-auto gap-6 md:gap-36">
+    <section class=" border-amber-50 mt-20 md:mt-40 pt-24 px-3 md:mt-44 md:py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl mx-auto gap-30">
             <!-- left section -->
             <div class=" flex flex-col items-start gap-2 md:gap-4">
                 <!-- sub container -->
@@ -159,16 +159,27 @@
 
 
             <!-- right section -->
-            <div class="h-12/8 relative flex-col">
+            <div class="h-10/8 md:h-11/8 relative">
+                <!-- monthly income -->
+                <div
+                    class="absolute -top-12 left-1/2 -translate-x-1/2 rounded-xl py-3 px-4 bg-olive-secondary w-[30%] min-w-[250px] flex gap-3 items-center">
+
+                    <img src="../assets/hero/income.svg" alt="">
+                    <div>
+                        <p class="text-xl">+ $5000,00</p>
+                        <p class="font-light">Monthly Income</p>
+                    </div>
+                </div>
                 <img class="absolute top-0 right-0 -z-10" src="../assets/hero/abstract_hero_top_right.svg" alt="">
-                <div class="rounded-xl border-[0.87px] h-9/10 w-8/10  z-10relative p-8 bg-dark-bg">
+                <div
+                    class="rounded-xl border-[0.87px] border-dark-card-bg h-9/10 w-full w-4/5 z-10relative p-8 bg-dark-bg flex flex-col justify-between">
                     <img src="../assets/hero/image.png"
-                        class="bg-[url(../assets/image.png)] opacity-[50%] w-8/10 h-4/10 absolute top-0 right-0" />
+                        class="opacity-[50%] w-8/10 h-4/10 absolute top-0 right-0 hidden md:flex" />
 
                     <!-- transaction -->
-                    <div class="h-1/2 flex flex-col gap-3">
+                    <div class="h-1/3 h-1/2 flex flex-col gap-3">
                         <h3 class="text-2xl font-medium">Your Transactions</h3>
-                        <div class="w-full h-full  relative">
+                        <div class="w-full h-full relative">
                             <div
                                 class="absolute top-0 z-30 w-full py-3 px-5 border-[0.87px] border-dark-card-bg bg-dark-container-bg rounded-xl flex justify-between items-end">
                                 <!-- transaction information -->
@@ -179,12 +190,12 @@
                                         <p>Joel Keney</p>
                                     </div>
                                 </div>
-                                <p class="text-2xl font-medium">
+                                <p class="text-xl text-2xl font-medium">
                                     +$10000000.00
                                 </p>
                             </div>
                             <div
-                                class="opacity-50 absolute top-11 left-8 z-20 w-9/10 py-3 px-5 border-[0.87px] border-dark-card-bg bg-dark-container-bg rounded-xl flex justify-between items-end">
+                                class="opacity-50 absolute top-11 left-1/2 -translate-x-1/2 z-20 w-9/10 py-3 px-5 border-[0.87px] border-dark-card-bg bg-dark-container-bg rounded-xl flex justify-between items-end">
                                 <!-- transaction information -->
                                 <div class="flex gap-2.5">
                                     <img src="../assets/hero/transaction.svg" alt="">
@@ -193,12 +204,12 @@
                                         <p>Joel Keney</p>
                                     </div>
                                 </div>
-                                <p class="text-2xl font-medium">
+                                <p class="text-base text-2xl font-medium">
                                     +$10000000.00
                                 </p>
                             </div>
                             <div
-                                class="opacity-20 absolute top-22 left-16 z-10 w-8/10 py-3 px-5 border-[0.87px] border-dark-card-bg bg-dark-container-bg rounded-xl flex justify-between items-end">
+                                class="opacity-20 absolute top-22 left-1/2 -translate-x-1/2 left-16 z-10 w-8/10 py-3 px-5 border-[0.87px] border-dark-card-bg bg-dark-container-bg rounded-xl flex justify-between items-end">
                                 <!-- transaction information -->
                                 <div class="flex gap-2.5">
                                     <img src="../assets/hero/transaction.svg" alt="">
@@ -207,16 +218,16 @@
                                         <p>Joel Keney</p>
                                     </div>
                                 </div>
-                                <p class="text-2xl font-medium">
+                                <p class="text-xs text-2xl font-medium">
                                     +$10000000.00
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-col gap-6 py-4">
+                    <div class="flex flex-col gap-6 mt-3">
                         <h3 class="text-2xl font-medium">Money Exchange</h3>
-                        <div class="flex-col border rounded-2xl">
+                        <div class="flex-col border border-dark-card-bg rounded-2xl">
                             <div class="grid grid-cols-2">
                                 <div class="p-4 ">
                                     <div class="flex items-center gap-3">
@@ -224,29 +235,29 @@
                                             alt="Rounded avatar">
                                         <p class="text-2xl">INR</p>
                                     </div>
-                                    <p class="mt-1">Indian Rupees</p>
+                                    <p class="mt-4 font-light">Indian Rupees</p>
                                 </div>
-                                <div class="p-4 border-l-2">
+                                <div class="p-4 border-l-2 border-dark-card-bg">
                                     <div class="flex items-center gap-3">
                                         <img class="w-10 h-10 rounded-full" src="../assets/hero/usa.svg"
                                             alt="Rounded avatar">
                                         <p class="text-2xl">USD</p>
                                     </div>
-                                    <p class="mt-2">United States Dollar</p>
+                                    <p class="mt-4 font-light">United States Dollar</p>
                                 </div>
-                                <p class="p-4 text-2xl border-t-2">
+                                <p class="py-6 px-4 text-2xl border-t-2 border-dark-card-bg">
                                     5,000
                                 </p>
-                                <p class="p-4 text-2xl border-t-2 border-l-2">
+                                <p class="py-6 px-4 text-2xl border-t-2 border-l-2 border-dark-card-bg">
                                     12.00
                                 </p>
                             </div>
                         </div>
-                        <button class="text-lime-primary bg-olive-secondary rounded-4xl py-3 w-full">Exchange</button>
+                        <button class="text-lime-primary bg-olive-secondary rounded-4xl py-3">Exchange</button>
                     </div>
                 </div>
-                <div class="flex justify-center mt-3">
-                    <div class="py-3 p-3 bg-olive-secondary rounded-[72px] flex items-center gap-3">
+                <div class="flex justify-center mt-3 w-full">
+                    <div class=" p-3 bg-olive-secondary rounded-[72px] flex items-center gap-3">
                         <div class="">
                             Supported Currency
                         </div>
@@ -260,9 +271,126 @@
                 </div>
             </div>
         </div>
-
-
     </section>
+
+    <!-- content section -->
+    <section class="mt-50 px-3 max-w-screen-2xl mx-auto flex flex-col gap-20">
+        <!-- our product -->
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+            <div class="flex flex-col gap-2 text-center">
+                <h2 class="text-start text-4xl font-semibold"> <span class="text-lime-primary">Our</span> Products</h2>
+                <p class="text-lg font-light text-start">Discover a range of comprehensive and customizable banking
+                    products at
+                    YourBank, designed to suit your unique financial needs and aspirations</p>
+            </div>
+            <div class="flex justify-end">
+                <div class="flex justify-between gap-3 md:w-1/2">
+                    <div class="py-3 px-4 bg-lime-primary w-1/2 text-center text-dark-container-bg rounded-3xl">
+                        For Individuals
+                    </div>
+                    <div class="py-3 px-4 bg-olive-secondary w-1/2 text-center rounded-3xl">
+                        For Individuals
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- product show case -->
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div
+                class="flex flex-col gap-4 pt-4 md:pt-0 items-center justify-between pb-8 border-b-[0.1px] border-dark-card-bg md:px-5  md:border-b-0 md:border-r-1">
+                <img class="w-18" src="../assets/our_product/checking_account.svg" alt="">
+                <p class="text-2xl">Checking Accounts</p>
+                <p class="text-lg font-light text-center">Enjoy easy and convenient access to your funds with our range
+                    of checking
+                    account options. Benefit
+                    from
+                    features such as online and mobile banking, debit cards, and free ATM access.</p>
+            </div>
+            <div
+                class="flex flex-col gap-4 pt-4 md:pt-0 items-center justify-between  pb-8 border-b-[0.1px] border-dark-card-bg md:border-b-0 md:px-5 md:border-r-1">
+                <img class="w-18" src="../assets/our_product/saving_account.svg" alt="">
+                <p class="text-2xl">Savings Accounts</p>
+                <p class="text-lg font-light text-center">Build your savings with our competitive interest rates and
+                    flexible savings
+                    account options. Whether you're saving for a specific goal or want to grow your wealth over time, we
+                    have the right account for you.</p>
+            </div>
+            <div class="flex flex-col pt-4 md:pt-0 gap-4 justify-between  items-center pb-8 md:px-5">
+                <img class="w-18" src="../assets/our_product/loan.svg" alt="">
+                <p class="text-2xl">Loans and Mortgages</p>
+                <p class="text-lg font-light text-center">Realize your dreams with our flexible loan and mortgage
+                    options. From personal
+                    loans to home mortgages, our experienced loan officers are here to guide you through the application
+                    process and help you secure the funds you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-20">
+        <!-- our product -->
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+            <div class="flex flex-col gap-2 text-center">
+                <h2 class="text-start text-4xl font-semibold"> <span class="text-lime-primary">Use Cases</span>
+                </h2>
+                <p class="text-sm font-light text-start">At YourBank, we cater to the diverse needs of individuals and
+                    businesses alike, offering a wide range of financial solutions</p>
+            </div>
+        </div>
+
+        <div>
+            <div></div>
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-3 ">
+                    <p class="text-2xl">For Individuals</p>
+                    <p class="text-sm font-light">For individuals, our mortgage services pave the way to homeownership,
+                        and our
+                        flexible
+                        personal loans provide vital support during various life milestones. We also prioritize
+                        retirement planning, ensuring a financially secure future for our customers</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="text-lime-primary flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-semibold">78%</dt>
+                        <dd class="text-gray-500 dark:text-gray-400 text-sm">Secure Retirement Planning</dd>
+                    </div>
+                    <div class="text-lime-primary flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-semibold">63%</dt>
+                        <dd class="text-gray-500 dark:text-gray-400 text-sm">Manageable Debt Consolidation</dd>
+                    </div>
+                    <div class="text-lime-primary flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-semibold">91%</dt>
+                        <dd class="text-gray-500 dark:text-gray-400 text-sm">Reducing financial burdens</dd>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div
+                        class="bg-olive-secondary px-6 py-3 border-1 border-dark-card-bg rounded-4xl w-full text-center">
+                        Learn more
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        </div>
+        <!-- product show case -->
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div
+                class="flex flex-col gap-4 pt-4 md:pt-0 items-center justify-between pb-8 border-b-[0.1px] border-dark-card-bg md:px-5  md:border-b-0 md:border-r-1">
+                <img class="w-18" src="../assets/our_product/checking_account.svg" alt="">
+                <p class="text-lg text-center">Enjoy easy and convenient access to your funds with our range
+                    of checking
+                    account options. Benefit
+                    from
+                    features such as online and mobile banking, debit cards, and free ATM access.</p>
+            </div>
+
+        </div>
+    </section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
