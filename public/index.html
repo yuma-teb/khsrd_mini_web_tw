@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../src/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
 </head>
 
 <body class="font-lexend bg-dark-bg text-white">
     <img class="w-[50%] fixed top-0 left-0" src="../assets/top_left.svg" alt="top-left-home-corner" />
     <!-- navigation bar  -->
-    <nav class=" dark:border-gray-700 fixed w-full top-12 px-3 md:px-0">
+    <nav class=" dark:border-gray-700 fixed w-full top-12 px-3 md:px-0 z-50">
         <div
             class="bg-dark-container-bg max-w-screen-2xl flex flex-wrap items-center justify-between gap-6 mx-auto  px-9 py-5 border rounded-[100px] border-dark-card-bg">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -157,7 +159,7 @@
 
 
             <!-- right section -->
-            <div class=" h-11/8 relative flex-col">
+            <div class="h-12/8 relative flex-col">
                 <img class="absolute top-0 right-0 -z-10" src="../assets/hero/abstract_hero_top_right.svg" alt="">
                 <div class="rounded-xl border-[0.87px] h-9/10 w-8/10  z-10relative p-8 bg-dark-bg">
                     <img src="../assets/hero/image.png"
@@ -212,24 +214,57 @@
                         </div>
                     </div>
 
-                    <div class=" h-1/2 border flex-col">
+                    <div class="flex flex-col gap-6 py-4">
                         <h3 class="text-2xl font-medium">Money Exchange</h3>
+                        <div class="flex-col border rounded-2xl">
+                            <div class="grid grid-cols-2">
+                                <div class="p-4 ">
+                                    <div class="flex items-center gap-3">
+                                        <img class="w-10 h-10 rounded-full" src="../assets/hero/india.svg"
+                                            alt="Rounded avatar">
+                                        <p class="text-2xl">INR</p>
+                                    </div>
+                                    <p class="mt-1">Indian Rupees</p>
+                                </div>
+                                <div class="p-4 border-l-2">
+                                    <div class="flex items-center gap-3">
+                                        <img class="w-10 h-10 rounded-full" src="../assets/hero/usa.svg"
+                                            alt="Rounded avatar">
+                                        <p class="text-2xl">USD</p>
+                                    </div>
+                                    <p class="mt-2">United States Dollar</p>
+                                </div>
+                                <p class="p-4 text-2xl border-t-2">
+                                    5,000
+                                </p>
+                                <p class="p-4 text-2xl border-t-2 border-l-2">
+                                    12.00
+                                </p>
+                            </div>
+                        </div>
                         <button class="text-lime-primary bg-olive-secondary rounded-4xl py-3 w-full">Exchange</button>
                     </div>
-
                 </div>
-                <div class="border">
-                    asd
+                <div class="flex justify-center mt-3">
+                    <div class="py-3 p-3 bg-olive-secondary rounded-[72px] flex items-center gap-3">
+                        <div class="">
+                            Supported Currency
+                        </div>
+                        <div class="bg-dark-bg p-2 rounded-[70px] flex gap-2">
+                            <img src="../assets/hero/dollar.svg" alt="">
+                            <img src="../assets/hero/euro.svg" alt="">
+                            <img src="../assets/hero/bit-coin.svg" alt="">
+                            <img src="../assets/hero/diamon.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
         </div>
 
 
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
