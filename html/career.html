@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- material icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+
+		<link href="../src/output.css" rel="stylesheet" />
+	</head>
+
+	<body class="font-lexend bg-dark-bg text-white">
+		<img
+			class="w-[50%] fixed top-0 left-0"
+			src="../assets/top_left.svg"
+			alt="top-left-home-corner"
+		/>
+		<!-- navigation bar  -->
+		<nav class="dark:border-gray-700 fixed w-full top-12 px-3 md:px-0 z-50">
+			<div
+				class="bg-dark-container-bg max-w-screen-2xl flex flex-wrap items-center justify-between gap-6 mx-auto px-9 py-5 border rounded-[100px] border-dark-card-bg"
+			>
+				<a
+					href="./index.html"
+					class="flex items-center space-x-3 rtl:space-x-reverse"
+				>
+					<img src="../assets/bank_logo.svg" class="h-8" alt="Flowbite Logo" />
+					<span class="self-center text-2xl dark:text-white">HRD Bank</span>
+				</a>
+				<button
+					data-collapse-toggle="navbar-multi-level"
+					type="button"
+					class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+					aria-controls="navbar-multi-level"
+					aria-expanded="false"
+				>
+					<span class="sr-only">Open main menu</span>
+					<svg
+						class="w-5 h-5"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 17 14"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M1 1h15M1 7h15M1 13h15"
+						/>
+					</svg>
+				</button>
+				<div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+					<ul class="flex gap-6">
+						<li>
+							<a
+								href="./index.html"
+								class="block py-3 px-8 text-white hover:bg-dark-card-bg rounded-3xl"
+								aria-current="page"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="./career.html"
+								id="dropdownNavbarLink"
+								data-dropdown-toggle="dropdownNavbar"
+								class="block py-3 px-8 text-white rounded-3xl bg-dark-card-bg"
+							>
+								Careers
+							</a>
+						</li>
+						<li>
+							<a
+								href="./html/about.html"
+								class="block py-3 px-8 text-white rounded-3xl hover:bg-dark-card-bg"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="block py-3 px-8 text-white rounded-3xl hover:bg-dark-card-bg"
+								>Security</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="flex gap-6 hidden lg:flex">
+					<button class="text-xl text-white">Sign Up</button>
+					<button
+						class="bg-lime-primary py-3.5 px-8 text-xl rounded-4xl text-dark-bg"
+					>
+						Login
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- hero section -->
+		<section class="max-w-screen-2xl mx-auto mt-20 pt-24 px-3">
+			<div
+				class="md:mt-0 p-4 rounded-3xl relative bg-dark-container-bg md:flex justify-end md:p-13"
+			>
+				<img
+					src="../assets/career/hero.svg"
+					class="w-full md:w-[60%] md:h-[1/2] z-10"
+					alt="career hero image"
+				/>
+
+				<div
+					class="bg-dark-bg flex flex-col gap-4 py-4 px-5 rounded-3xl absolute left-1/2 -translate-x-1/2 md:left-13 md:translate-x-0 w-[calc(100%-16px)] md:w-[50%] top-60 md:top-13 z-20 md:rouned-br-3xl md:rounded-bl-xl md:rounded-tl-xl rounded-tr-none md:p-20"
+				>
+					<h2
+						class="text-4xl md:text-5xl font-semibold text-center md:text-start"
+					>
+						Welcome to <span class="text-lime-primary">YourBank</span> Careers
+					</h2>
+					<p class="text-lg font-light text-center md:text-start">
+						Join our team and embark on a rewarding journey in the banking
+						industry. At YourBank, we are committed to fostering a culture of
+						excellence and providing opportunities for professional growth. With
+						a focus on innovation, customer service, and integrity, we strive to
+						make a positive impact in the lives of our customers and
+						communities. Join us today and be a part of our mission to shape the
+						future of banking.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- our values -->
+		<section
+			class="mt-160 md:mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-9 md:gap-20"
+		>
+			<!-- our product -->
+			<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+				<div class="flex flex-col gap-2 text-center">
+					<h2 class="text-center md:text-start text-4xl font-semibold">
+						Our
+						<span class="text-lime-primary">Values</span>
+					</h2>
+					<p
+						class="text-sm font-light text-center md:text-start text-text-secondary"
+					>
+						At YourBank, our values form the foundation of our organization and
+						guide our actions. We believe in upholding the highest standards of
+						integrity, delivering exceptional service, and embracing innovation.
+						These values define our culture and shape the way we work together
+						to achieve our goals.
+					</p>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20">
+				<div
+					class="flex flex-col items-start gap-4 border-l-1 border-l-lime-primary pl-3"
+				>
+					<p class="text-3xl font-semibold text-text-secondary">Itegrity</p>
+					<p class="text-text-blur">
+						We conduct ourselves with utmost honesty, transparency, and ethical
+						behavior. We believe in doing what is right for our customers,
+						colleagues, and stakeholders, even when faced with difficult
+						choices.
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-start gap-4 border-l-1 border-l-lime-primary pl-3"
+				>
+					<p class="text-3xl font-semibold text-text-secondary">
+						Customer Centricity
+					</p>
+					<p class="text-text-blur">
+						Our customers are at the heart of everything we do. We are dedicated
+						to understanding their needs, providing personalized solutions, and
+						delivering exceptional service that exceeds expectations.
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-start gap-4 border-l-1 border-l-lime-primary pl-3"
+				>
+					<p class="text-3xl font-semibold text-text-secondary">
+						Collaboration
+					</p>
+					<p class="text-text-blur">
+						We foster a collaborative and inclusive work environment, where
+						teamwork and diversity are celebrated. By leveraging the unique
+						strengths and perspectives of our employees, we drive innovation and
+						achieve greater success together.
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-start gap-4 border-l-1 border-l-lime-primary pl-3"
+				>
+					<p class="text-3xl font-semibold text-text-secondary">Innovation</p>
+					<p class="text-text-blur">
+						We embrace change and constantly seek innovative solutions to meet
+						the evolving needs of our customers. We encourage our employees to
+						think creatively, challenge conventions, and explore new ideas to
+						drive the future of banking.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- our benifits -->
+		<section
+			class="mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-9 md:gap-20"
+		>
+			<!-- our product -->
+			<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+				<div class="flex flex-col gap-2 text-center">
+					<h2 class="text-center md:text-start text-4xl font-semibold">
+						Our
+						<span class="text-lime-primary">Benefits</span>
+					</h2>
+					<p
+						class="text-sm font-light text-center md:text-start text-text-secondary"
+					>
+						At YourBank, we value our employees and are dedicated to their
+						well-being and success. We offer a comprehensive range of benefits
+						designed to support their personal and professional growth.
+					</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20">
+				<div
+					class="flex flex-col gap-4 px-6 py-5 bg-dark-container-bg rounded-t-4xl rouned-b-3xl"
+				>
+					<div class="flex items-center gap-3">
+						<img src="../assets/career/compitativ.svg" alt="compitative" />
+						<p class="text-xl">Competitive Compensation</p>
+					</div>
+					<p class="text-text-secondary">
+						We provide a competitive salary package that recognizes the skills
+						and expertise of our employees. YourBank believes in rewarding
+						exceptional performance and offering opportunities for financial
+						growth.
+					</p>
+				</div>
+				<div
+					class="flex flex-col gap-4 px-6 py-5 bg-dark-container-bg rounded-t-4xl rouned-b-3xl"
+				>
+					<div class="flex items-center gap-3">
+						<img src="../assets/career/health.svg" alt="compitative" />
+						<p class="text-xl">Health and Wellness</p>
+					</div>
+					<p class="text-text-secondary">
+						We prioritize the health and well-being of our employees by
+						providing comprehensive medical, dental, and vision insurance plans.
+						We also offer wellness programs, gym memberships, and resources to
+						support a healthy lifestyle.
+					</p>
+				</div>
+				<div
+					class="flex flex-col gap-4 px-6 py-5 bg-dark-container-bg rounded-t-4xl rouned-b-3xl"
+				>
+					<div class="flex items-center gap-3">
+						<img src="../assets/career/retirement.svg" alt="compitative" />
+						<p class="text-xl">Retirement Planning</p>
+					</div>
+					<p class="text-text-secondary">
+						YourBank is committed to helping employees plan for their future. We
+						offer a retirement savings plan with a generous employer match to
+						help them build a secure financial foundation for the long term.
+					</p>
+				</div>
+				<div
+					class="flex flex-col gap-4 px-6 py-5 bg-dark-container-bg rounded-t-4xl rouned-b-3xl"
+				>
+					<div class="flex items-center gap-3">
+						<img src="../assets/career/work_balance.svg" alt="compitative" />
+						<p class="text-xl">Work-Life Balance</p>
+					</div>
+					<p class="text-text-secondary">
+						We understand the importance of maintaining a healthy work-life
+						balance. YourBank offers flexible work arrangements, paid time off,
+						parental leave, and other programs that support employees in
+						managing their personal and professional commitments.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- job opening -->
+		<section
+			class="mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-9 md:gap-20"
+		>
+			<div class="grid grid-cols-1 items-center gap-4 md:gap-20">
+				<div class="flex flex-col gap-2 text-center">
+					<h2 class="text-center md:text-start text-4xl font-semibold">
+						<span class="text-lime-primary">Job Openings</span>
+					</h2>
+					<p
+						class="text-sm font-light text-center md:text-start text-text-secondary"
+					>
+						At YourBank, we value our employees and are dedicated to their
+						well-being and success. We offer a comprehensive range of benefits
+						designed to support their personal and professional growth.
+					</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20">
+				<div
+					class="flex flex-col gap-4 md:gap-12 bg-dark-container-bg border-1 border-dark-card-bg p-6 rounded-3xl md:p-13"
+				>
+					<div class="flex flex-col gap-4">
+						<p class="text-3xl">Relationship Manager</p>
+						<div class="flex flex-wrap gap-2">
+							<div
+								class="border-1 border-dark-card-bg bg-dark-bg p-4 rounded-3xl w-fit"
+							>
+								Locaiton: India
+							</div>
+							<div
+								class="border-1 border-dark-card-bg bg-dark-bg p-4 rounded-3xl w-fit"
+							>
+								Department: Retail Banking
+							</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col gap-4">
+						<p class="text-2xl">About This Job</p>
+						<p class="text-text-secondary">
+							As a Relationship Manager at YourBank, you will be responsible for
+							developing and maintaining relationships with our valued
+							customers. You will proactively identify their financial needs and
+							offer tailored solutions to help them achieve their goals. We are
+							seeking individuals with excellent communication skills, a strong
+							sales acumen, and a passion for delivering exceptional customer
+							service.
+						</p>
+					</div>
+
+					<div class="flex flex-col gap-4">
+						<p class="text-xl">Requirements & Qualifications</p>
+						<div class="flex flex-col gap-3">
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Bachelor's degree in Business, Finance, or a related field
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Minimum of 3 years of experience in sales or relationship
+									management in the banking industry
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Proven track record of meeting and exceeding sales targets
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Excellent interpersonal and negotiation skills
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Strong knowledge of banking products and services
+								</p>
+							</div>
+						</div>
+					</div>
+					<button
+						class="bg-lime-primary w-fit py-3 px-4 text-sm rounded-4xl text-dark-bg"
+					>
+						Apply Now
+					</button>
+				</div>
+				<div
+					class="flex flex-col gap-4 md:gap-12 bg-dark-container-bg border-1 border-dark-card-bg p-6 rounded-3xl md:p-13"
+				>
+					<div class="flex flex-col gap-4">
+						<p class="text-3xl">Risk Analyst</p>
+						<div class="flex flex-wrap gap-2">
+							<div
+								class="border-1 border-dark-card-bg bg-dark-bg p-4 rounded-3xl w-fit"
+							>
+								Locaiton: India
+							</div>
+							<div
+								class="border-1 border-dark-card-bg bg-dark-bg p-4 rounded-3xl w-fit"
+							>
+								Department: Retail Banking
+							</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col gap-4">
+						<p class="text-2xl">About This Job</p>
+						<p class="text-text-secondary">
+							As a Risk Analyst at YourBank, you will play a vital role in
+							identifying and assessing potential risks to our organization. You
+							will analyze data, conduct risk assessments, and develop
+							strategies to mitigate risks. We are looking for detail-oriented
+							individuals with strong analytical skills and a solid
+							understanding of risk management principles.
+						</p>
+					</div>
+
+					<div class="flex flex-col gap-4">
+						<p class="text-xl">Requirements & Qualifications</p>
+						<div class="flex flex-col gap-3">
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Bachelor's degree in Finance, Economics, or a related field
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Minimum of 2 years of experience in risk management or a
+									similar role
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Proficiency in risk analysis tools and techniques
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Strong analytical and problem-solving skills
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Knowledge of regulatory requirements and industry best
+									practices
+								</p>
+							</div>
+						</div>
+					</div>
+					<button
+						class="bg-lime-primary w-fit py-3 px-4 text-sm rounded-4xl text-dark-bg"
+					>
+						Apply Now
+					</button>
+				</div>
+				<div
+					class="flex flex-col gap-4 md:gap-12 bg-dark-container-bg border-1 border-dark-card-bg p-6 rounded-3xl md:p-13"
+				>
+					<div class="flex flex-col gap-4">
+						<p class="text-3xl">IT Security Specialist</p>
+						<div class="flex flex-wrap gap-2">
+							<div
+								class="border-1 border-dark-card-bg bg-dark-bg p-4 rounded-3xl w-fit"
+							>
+								Locaiton: India
+							</div>
+							<div
+								class="border-1 border-dark-card-bg bg-dark-bg p-4 rounded-3xl w-fit"
+							>
+								Department: Information Technology
+							</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col gap-4">
+						<p class="text-2xl">About This Job</p>
+						<p class="text-text-secondary">
+							As an IT Security Specialist at YourBank, you will be responsible
+							for ensuring the security and integrity of our information
+							systems. You will develop and implement security protocols,
+							conduct vulnerability assessments, and respond to security
+							incidents. We are seeking individuals with a strong technical
+							background, knowledge of cybersecurity best practices, and a
+							commitment to maintaining the confidentiality of customer data.
+						</p>
+					</div>
+
+					<div class="flex flex-col gap-4">
+						<p class="text-xl">Requirements & Qualifications</p>
+						<div class="flex flex-col gap-3">
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Bachelor's degree in Computer Science, Information Security,
+									or a related field
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Minimum of 5 years of experience in IT security or a similar
+									role
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									In-depth knowledge of network security protocols and
+									technologies
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Familiarity with regulatory frameworks such as PCI DSS and
+									GDPR
+								</p>
+							</div>
+							<div class="flex gap-3 items-center">
+								<img src="../assets/career/bacheulor.svg" alt="bachelor" />
+								<p class="text-text-secondary">
+									Professional certifications such as CISSP or CISM are
+									preferred
+								</p>
+							</div>
+						</div>
+					</div>
+					<button
+						class="bg-lime-primary w-fit py-3 px-4 text-sm rounded-4xl text-dark-bg"
+					>
+						Apply Now
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- frequenlyt ask question -->
+		<section
+			class="mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-9 md:gap-20"
+		>
+			<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+				<div class="flex flex-col gap-2 text-center">
+					<h2 class="text-start text-4xl font-semibold">
+						<span class="text-lime-primary">Frequently</span> Asked Questions
+					</h2>
+					<p class="text-sm font-light text-start">
+						Still you have any questions? Contact our Team via
+						support@yourbank.com
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col items-center justify-center gap-6 md:gap-12">
+				<!-- questions and answer -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+					<div
+						class="p-5 md:p-13 flex flex-col gap-8 border-1 border-dark-card-bg rounded-xl justify-between"
+					>
+						<p class="text-xl">How do I open an account with YourBank?</p>
+						<hr />
+						<p class="font-light text-justify">
+							Opening an account with YourBank is easy. Simply visit our website
+							and click on the "Open an Account" button. Follow the prompts,
+							provide the required information, and complete the application
+							process. If you have any questions or need assistance, our
+							customer support team is available to help.
+						</p>
+					</div>
+					<div
+						class="p-5 md:p-13 flex flex-col gap-8 border-1 border-dark-card-bg rounded-xl justify-between"
+					>
+						<p class="text-xl">
+							What documents do I need to provide to apply for a loan?
+						</p>
+						<hr />
+						<p class="font-light text-justify">
+							The documents required for a loan application may vary depending
+							on the type of loan you are applying for. Generally, you will need
+							to provide identification documents (such as a passport or
+							driver's license), proof of income (such as pay stubs or tax
+							returns), and information about the collateral (if applicable).
+							Our loan officers will guide you through the specific requirements
+							during the application process.
+						</p>
+					</div>
+					<div
+						class="p-5 md:p-13 flex flex-col gap-8 border-1 border-dark-card-bg rounded-xl justify-between"
+					>
+						<p class="text-xl">How can I access my accounts online?</p>
+						<hr />
+						<p class="font-light text-justify">
+							Accessing your accounts online is simple and secure. Visit our
+							website and click on the "Login" button. Enter your username and
+							password to access your accounts. If you haven't registered for
+							online banking, click on the "Enroll Now" button and follow the
+							registration process. If you need assistance, our customer support
+							team is available to guide you.
+						</p>
+					</div>
+					<div
+						class="p-5 md:p-13 flex flex-col gap-8 border-1 border-dark-card-bg rounded-xl justify-between"
+					>
+						<p class="text-xl">
+							Are my transactions and personal information secure?
+						</p>
+						<hr />
+						<p class="font-light text-justify">
+							At YourBank, we prioritize the security of your transactions and
+							personal information. We employ industry-leading encryption and
+							multi-factor authentication to ensure that your data is protected.
+							Additionally, we regularly update our security measures to stay
+							ahead of emerging threats. You can bank with confidence knowing
+							that we have robust security systems in place.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex border-1 border-dark-card-bg bg-dark-container-bg w-fit px-6 py-4 rounded-2xl text-lg"
+				>
+					Load All FAQ'S
+					<span class="material-icons-outlined"> keyboard_arrow_down </span>
+				</div>
+			</div>
+		</section>
+
+		<!-- testimonial -->
+		<section
+			class="mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-9 md:gap-20"
+		>
+			<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+				<div class="flex flex-col gap-2 text-center">
+					<h2 class="text-start text-4xl font-semibold">
+						Our <span class="text-lime-primary">Testimonials </span>
+					</h2>
+					<p class="text-lg font-light text-start">
+						Discover how YourBank has transformed lives with innovative digital
+						solutions and personalized customer service. See why our clients
+						trust us for a secure and prosperous financial journey
+					</p>
+				</div>
+				<div class="flex flex-row justify-end gap-3">
+					<div
+						class="py-3 px-4 bg-lime-primary w-full md:w-fit text-center text-dark-container-bg rounded-3xl"
+					>
+						For Individuals
+					</div>
+					<div
+						class="py-3 px-4 bg-olive-secondary w-full md:w-fit text-center rounded-3xl"
+					>
+						For Businesses
+					</div>
+				</div>
+			</div>
+			<div class="flex items-center">
+				<div
+					class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full hidden md:flex"
+				>
+					<img src="./assets/testimonia/back_arrow.svg" alt="" />
+				</div>
+				<section
+					class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full md:w-9/10 mx-auto"
+				>
+					<div
+						class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 hidden md:flex relative"
+					>
+						<figure
+							class="max-w-screen-md h-full mx-auto flex flex-col justify-between relative before:absolute before:left-0 before:top-0 before:h-full before:w-9/10 before:bg-gradient-to-l before:from-transparent before:to-dark-bg"
+						>
+							<div class="flex gap-5 items-center">
+								<div class="grow border border-dark-card-bg"></div>
+								<img src="./assets/testimonia/quote.svg" alt="" />
+								<div class="grow border border-dark-card-bg"></div>
+							</div>
+							<blockquote>
+								<p class="text-xl font-medium text-gray-900 dark:text-white">
+									Starting my business was overwhelming, but YourBank made the
+									financial side stress-free. Their team walked me through
+									everything, from setting up my accounts to securing a business
+									loan. Thanks to their support, I was able to focus on growing
+									my business.
+								</p>
+							</blockquote>
+							<figcaption
+								class="flex items-center justify-center mt-6 space-x-3"
+							>
+								<p class="text-3xl text-lime-primary font-semibold">Jonh</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div
+						class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 border-1 border-dark-card-bg md:border-0 rounded-3xl"
+					>
+						<figure
+							class="max-w-screen-md mx-auto flex flex-col justify-between"
+						>
+							<div class="flex gap-5 items-center">
+								<div class="grow border border-dark-card-bg"></div>
+								<img src="./assets/testimonia/quote.svg" alt="" />
+								<div class="grow border border-dark-card-bg"></div>
+							</div>
+							<blockquote>
+								<p class="text-xl font-medium text-gray-900 dark:text-white">
+									I recently started my own business, and YourBank has been
+									instrumental in helping me set up my business accounts and
+									secure the financing I needed. Their expert guidance and
+									tailored solutions have been invaluable.
+								</p>
+							</blockquote>
+							<figcaption
+								class="flex items-center justify-center mt-6 space-x-3"
+							>
+								<p class="text-3xl text-lime-primary font-semibold">Jonh</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div
+						class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 hidden md:flex"
+					>
+						<figure
+							class="max-w-screen-md h-full mx-auto flex flex-col justify-between relative before:absolute before:right-0 before:top-0 before:h-full before:w-9/10 before:bg-gradient-to-r before:from-transparent before:to-dark-bg"
+						>
+							<div class="flex gap-5 items-center">
+								<div class="grow border border-dark-card-bg"></div>
+								<img src="./assets/testimonia/quote.svg" alt="" />
+								<div class="grow border border-dark-card-bg"></div>
+							</div>
+							<blockquote>
+								<p class="text-xl font-medium text-gray-900 dark:text-white">
+									"YourBank has been a game-changer for my startup. Their
+									customized banking solutions and responsive customer service
+									helped me manage my finances with confidence. I highly
+									recommend them to any entrepreneur looking for reliable
+									financial support.
+								</p>
+							</blockquote>
+							<figcaption
+								class="flex items-center justify-center mt-6 space-x-3"
+							>
+								<p class="text-3xl text-lime-primary font-semibold">Jonh</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="w-full md:hidden flex justify-center gap-5">
+						<div
+							class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full"
+						>
+							<img src="./assets/testimonia/back_arrow.svg" alt="" />
+						</div>
+						<div
+							class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full"
+						>
+							<img src="./assets/testimonia/next.svg" alt="" />
+						</div>
+					</div>
+				</section>
+				<div
+					class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full hidden md:flex"
+				>
+					<img src="./assets/testimonia/next.svg" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<!-- start the new journey -->
+		<section
+			class="relative mt-20 p-3 md:p-20 max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-9 md:gap-44 relative bg-dark-container-bg md:border border-dark-card-bg rounded-3xl"
+		>
+			<!-- <img src="./assets/top_left.svg" class="absolute" alt="" /> -->
+			<div class="flex flex-col justify-between md:grow gap-5">
+				<p class="text-4xl font-semibold">
+					Start your financial journey with
+					<span class="text-lime-primary"> YourBank today!</span>
+				</p>
+				<p>
+					Ready to take control of your finances? Join YourBank now, and let us
+					help you achieve your financial goals with our tailored solutions and
+					exceptional customer service
+				</p>
+			</div>
+			<div
+				class="py-3 px-4 bg-lime-primary w-full h-fit md:w-fit text-center text-dark-container-bg rounded-3xl text-nowrap"
+			>
+				Open Account
+			</div>
+		</section>
+
+		<footer
+			class="mt-20 p-3 md:p-20 flex flex-col gap-9 md:gap-12 relative bg-dark-container-bg md:border border-dark-card-bg items-center"
+		>
+			<div class="flex gap-4 items-center">
+				<img src="./assets/bank_logo.svg" alt="" />
+				<p class="text-3xl font-medium">YourBank</p>
+			</div>
+
+			<div class="flex gap-4 text-xl">
+				<p>Home</p>
+				<p>Carrers</p>
+				<p>About</p>
+				<p>Security</p>
+			</div>
+
+			<div class="bg-dark-card-bg h-[2px] w-full"></div>
+			<div class="flex flex-wrap gap-5">
+				<div class="flex items-center gap-3">
+					<img src="../assets/footer/message.svg" alt="" />
+					<p>hello@skillbirdge.com</p>
+				</div>
+				<div class="flex items-center gap-3">
+					<img src="../assets/footer/phone.svg" alt="" />
+					<p>+91 91813 23 2309</p>
+				</div>
+				<div class="flex items-center gap-3">
+					<img src="../assets/footer/location.svg" alt="" />
+					<p>Somewhere in the World</p>
+				</div>
+			</div>
+
+			<div class="bg-dark-card-bg h-[2px] w-full"></div>
+
+			<div
+				class="relative py-10 md:p-3 bg-dark-container-bg border-1 border-dark-card-bg flex flex-col md:flex-row md:justify-between gap-4 text-text-secondary border w-full items-center rounded-3xl"
+			>
+				<div class="flex gap-3 absolute -top-6 md:top-auto md:relative">
+					<img src="../assets/social_media/facebook.svg" alt="" />
+					<img src="../assets/social_media/twitter.svg" alt="" />
+					<img src="../assets/social_media/linkin.svg" alt="" />
+				</div>
+
+				<p>YourBank All rights Reserved</p>
+
+				<div class="flex gap-4">
+					<p>Privacy Policy</p>
+					<p>Terms of Service</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.minjs"></script>
+	</body>
+</html>
