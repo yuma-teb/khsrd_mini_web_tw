@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- material icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+
+		<link href="../src/output.css" rel="stylesheet" />
+	</head>
+
+	<body class="font-lexend bg-dark-bg text-white">
+		<img
+			class="w-[50%] fixed top-0 left-0"
+			src="../assets/top_left.svg"
+			alt="top-left-home-corner"
+		/>
+		<!-- navigation bar  -->
+		<nav class="dark:border-gray-700 fixed w-full top-12 px-3 md:px-0 z-50">
+			<div
+				class="bg-dark-container-bg max-w-screen-2xl flex flex-wrap items-center justify-between gap-6 mx-auto px-9 py-5 border rounded-[100px] border-dark-card-bg"
+			>
+				<a
+					href="./index.html"
+					class="flex items-center space-x-3 rtl:space-x-reverse"
+				>
+					<img src="../assets/bank_logo.svg" class="h-8" alt="Flowbite Logo" />
+					<span class="self-center text-2xl dark:text-white">HRD Bank</span>
+				</a>
+				<button
+					data-collapse-toggle="navbar-multi-level"
+					type="button"
+					class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+					aria-controls="navbar-multi-level"
+					aria-expanded="false"
+				>
+					<span class="sr-only">Open main menu</span>
+					<svg
+						class="w-5 h-5"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 17 14"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M1 1h15M1 7h15M1 13h15"
+						/>
+					</svg>
+				</button>
+				<div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+					<ul class="flex gap-6">
+						<li>
+							<a
+								href="#"
+								class="block py-3 px-8 text-white hover:bg-dark-card-bg rounded-3xl"
+								aria-current="page"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="./career.html"
+								id="dropdownNavbarLink"
+								data-dropdown-toggle="dropdownNavbar"
+								class="block py-3 px-8 text-white rounded-3xl hover:bg-dark-card-bg"
+							>
+								Careers
+							</a>
+						</li>
+						<li>
+							<a
+								href="./about.html"
+								class="block py-3 px-8 text-white rounded-3xl hover:bg-dark-card-bg"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="./security.html"
+								class="block py-3 px-8 text-white rounded-3xl hover:bg-dark-card-bg"
+								>Security</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="flex gap-6 hidden lg:flex">
+					<button class="text-xl text-white">Sign Up</button>
+					<button
+						class="bg-lime-primary py-3.5 px-8 text-xl rounded-4xl text-dark-bg"
+					>
+						Login
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- login section -->
+		<section class="bg"></section>
+
+		<!-- testimonial -->
+		<section
+			class="mt-20 px-3 max-w-screen-2xl mx-auto flex flex-col gap-9 md:gap-20"
+		>
+			<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-20">
+				<div class="flex flex-col gap-2 text-center">
+					<h2 class="text-start text-4xl font-semibold">
+						Our <span class="text-lime-primary">Testimonials </span>
+					</h2>
+					<p class="text-lg font-light text-start">
+						Discover how YourBank has transformed lives with innovative digital
+						solutions and personalized customer service. See why our clients
+						trust us for a secure and prosperous financial journey
+					</p>
+				</div>
+				<div class="flex flex-row justify-end gap-3">
+					<div
+						class="py-3 px-4 bg-lime-primary w-full md:w-fit text-center text-dark-container-bg rounded-3xl"
+					>
+						For Individuals
+					</div>
+					<div
+						class="py-3 px-4 bg-olive-secondary w-full md:w-fit text-center rounded-3xl"
+					>
+						For Businesses
+					</div>
+				</div>
+			</div>
+			<div class="flex items-center">
+				<div
+					class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full hidden md:flex"
+				>
+					<img src="../assets/testimonia/back_arrow.svg" alt="" />
+				</div>
+				<section
+					class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full md:w-9/10 mx-auto"
+				>
+					<div
+						class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 hidden md:flex relative"
+					>
+						<figure
+							class="max-w-screen-md h-full mx-auto flex flex-col justify-between relative before:absolute before:left-0 before:top-0 before:h-full before:w-9/10 before:bg-gradient-to-l before:from-transparent before:to-dark-bg"
+						>
+							<div class="flex gap-5 items-center">
+								<div class="grow border border-dark-card-bg"></div>
+								<img src="../assets/testimonia/quote.svg" alt="" />
+								<div class="grow border border-dark-card-bg"></div>
+							</div>
+							<blockquote>
+								<p class="text-xl font-medium text-gray-900 dark:text-white">
+									Starting my business was overwhelming, but YourBank made the
+									financial side stress-free. Their team walked me through
+									everything, from setting up my accounts to securing a business
+									loan. Thanks to their support, I was able to focus on growing
+									my business.
+								</p>
+							</blockquote>
+							<figcaption
+								class="flex items-center justify-center mt-6 space-x-3"
+							>
+								<p class="text-3xl text-lime-primary font-semibold">Jonh</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div
+						class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 border-1 border-dark-card-bg md:border-0 rounded-3xl"
+					>
+						<figure
+							class="max-w-screen-md mx-auto flex flex-col justify-between"
+						>
+							<div class="flex gap-5 items-center">
+								<div class="grow border border-dark-card-bg"></div>
+								<img src="../assets/testimonia/quote.svg" alt="" />
+								<div class="grow border border-dark-card-bg"></div>
+							</div>
+							<blockquote>
+								<p class="text-xl font-medium text-gray-900 dark:text-white">
+									I recently started my own business, and YourBank has been
+									instrumental in helping me set up my business accounts and
+									secure the financing I needed. Their expert guidance and
+									tailored solutions have been invaluable.
+								</p>
+							</blockquote>
+							<figcaption
+								class="flex items-center justify-center mt-6 space-x-3"
+							>
+								<p class="text-3xl text-lime-primary font-semibold">Jonh</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div
+						class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 hidden md:flex"
+					>
+						<figure
+							class="max-w-screen-md h-full mx-auto flex flex-col justify-between relative before:absolute before:right-0 before:top-0 before:h-full before:w-9/10 before:bg-gradient-to-r before:from-transparent before:to-dark-bg"
+						>
+							<div class="flex gap-5 items-center">
+								<div class="grow border border-dark-card-bg"></div>
+								<img src="../assets/testimonia/quote.svg" alt="" />
+								<div class="grow border border-dark-card-bg"></div>
+							</div>
+							<blockquote>
+								<p class="text-xl font-medium text-gray-900 dark:text-white">
+									"YourBank has been a game-changer for my startup. Their
+									customized banking solutions and responsive customer service
+									helped me manage my finances with confidence. I highly
+									recommend them to any entrepreneur looking for reliable
+									financial support.
+								</p>
+							</blockquote>
+							<figcaption
+								class="flex items-center justify-center mt-6 space-x-3"
+							>
+								<p class="text-3xl text-lime-primary font-semibold">Jonh</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="w-full md:hidden flex justify-center gap-5">
+						<div
+							class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full"
+						>
+							<img src="../assets/testimonia/back_arrow.svg" alt="" />
+						</div>
+						<div
+							class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full"
+						>
+							<img src="../assets/testimonia/next.svg" alt="" />
+						</div>
+					</div>
+				</section>
+				<div
+					class="p-4 bg-dark-container-bg border-1 border-dark-card-bg rounded-full hidden md:flex"
+				>
+					<img src="../assets/testimonia/next.svg" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<footer
+			class="mt-20 p-3 md:p-20 flex flex-col gap-9 md:gap-12 relative bg-dark-container-bg md:border border-dark-card-bg items-center"
+		>
+			<div class="flex gap-4 items-center">
+				<img src="./assets/bank_logo.svg" alt="" />
+				<p class="text-3xl font-medium">YourBank</p>
+			</div>
+
+			<div class="flex gap-4 text-xl">
+				<p>Home</p>
+				<p>Carrers</p>
+				<p>About</p>
+				<p>Security</p>
+			</div>
+
+			<div class="bg-dark-card-bg h-[2px] w-full"></div>
+
+			<div class="flex flex-wrap gap-5">
+				<div class="flex items-center gap-3">
+					<img src="../assets/footer/message.svg" alt="" />
+					<p>hello@skillbirdge.com</p>
+				</div>
+				<div class="flex items-center gap-3">
+					<img src="../assets/footer/phone.svg" alt="" />
+					<p>+91 91813 23 2309</p>
+				</div>
+				<div class="flex items-center gap-3">
+					<img src="../assets/footer/location.svg" alt="" />
+					<p>Somewhere in the World</p>
+				</div>
+			</div>
+
+			<div class="bg-dark-card-bg h-[2px] w-full"></div>
+
+			<div
+				class="relative py-10 md:p-3 bg-dark-container-bg border-1 border-dark-card-bg flex flex-col md:flex-row md:justify-between gap-4 text-text-secondary border w-full items-center rounded-3xl"
+			>
+				<div class="flex gap-3 absolute -top-6 md:top-auto md:relative">
+					<img src="../assets/social_media/facebook.svg" alt="" />
+					<img src="../assets/social_media/twitter.svg" alt="" />
+					<img src="../assets/social_media/linkin.svg" alt="" />
+				</div>
+
+				<p>YourBank All rights Reserved</p>
+
+				<div class="flex gap-4">
+					<p>Privacy Policy</p>
+					<p>Terms of Service</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.minjs"></script>
+	</body>
+</html>
